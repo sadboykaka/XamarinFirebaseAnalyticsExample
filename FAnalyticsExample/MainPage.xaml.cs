@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace FAnalyticsExample
 {
-    public partial class MainPage : ContentPage
+	public partial class MainPage : TabbedPage
     {
         public MainPage()
         {

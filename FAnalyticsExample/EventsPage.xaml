@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FAnalyticsExample.EventsPage"
+             Title="Events">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Label Text="My first app with Google Analytics!" 
+               Grid.Row="0" Grid.Column="0"
+               VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+        <Label Text="Click any event to track it on Google Analytics" 
+               Grid.Row="1" Grid.Column="0"
+               VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+        
+        <Button x:Name="Event1" Text="Event 1" Clicked="Event1_Clicked"
+                Grid.Row="2" Grid.Column="0" 
+                VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button x:Name="Event2" Text="Event 2" Clicked="Event2_Clicked"
+                Grid.Row="3" Grid.Column="0" 
+                VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button x:Name="Event3" Text="Event 3" Clicked="Event3_Clicked"
+                Grid.Row="4" Grid.Column="0" 
+                VerticalOptions="Center" HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>
