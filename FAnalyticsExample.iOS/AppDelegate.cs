@@ -1,6 +1,6 @@
-﻿using Firebase.Analytics;
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using Firebase.Analytics;
 
 namespace FAnalyticsExample.iOS
 {
@@ -11,7 +11,8 @@ namespace FAnalyticsExample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-			Firebase.Core.App.Configure();
+            Firebase.Core.App.Configure();
+			Analytics.LogEvent(EventNamesConstants.AppOpen, null);
 
             LoadApplication(new App());
 
